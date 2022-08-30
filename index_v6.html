@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halifax Canoe and Kayak</title>
+    <link rel="stylesheet" href="mainv6.css" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
+    <style>
+#p1, #p2 {
+    color: green;
+    text-decoration: underline;
+    font-size: 70%;
+    }
+#p1Text, #p2Text {
+    color: black;
+    text-align: justify;
+    font-size: 45%;
+}
+    </style>   
+</head>
+<body>
+    <header>    
+        <div class="column">
+            <div><input id="menuBtn" type="image" src="hamburger.png" alt="Navigation button"></div>
+            <div id="mainTitle">Halifax Canoe and Kayak</div>
+            <div><img src="logo.png" alt="logo"/></div>            
+        </div>        
+    </header>
+    <main>
+        <article>
+            <div id="textCont">
+                <img src="canoe.jpg" alt="Canoe pic"/>
+                <div id="bannerText">Come Experience<br>Canada</div>
+                <p id="mainText">Upcoming events></p>
+                <p id="p1"> Halifax</p>
+                <br>
+                <p id="p1Text">Halifax, officially known as the Halifax Regional Municipality (HRM), 
+                    is the capital of the Canadian province of Nova Scotia. 
+                    It had a population of 403,131 in 2016, with 316,701 in the urban 
+                    area centred on Halifax Harbour. In July 2020 Statistics Canada estimated 
+                    the population of the CMA at 448,544. The regional municipality consists of 
+                    four former municipalities that were amalgamated in 1996: Halifax, 
+                    Dartmouth, Bedford, and Halifax County.
+                </p>
+                <p id="p2"> Sydney</p>
+                <br>                
+                <p id="p2Text">Sydney is a former city and urban community on the east coast of Cape
+                     Breton Island in Nova Scotia, Canada within the Cape Breton Regional Municipality. 
+                     Sydney was founded in 1785 by the British, was incorporated as a city in 1904, 
+                     and dissolved on 1 August 1995, when it was amalgamated into the regional 
+                     municipality. Sydney is located in Mikmaki, the ancestral and unceded territory 
+                     of the Mikmaq People. This territory is covered by the “Treaties of Peace and Friendship” 
+                <p>
+            </div>
+        </article>        
+    </main>
+    <nav>
+        <div id="popDownmenu">
+            <div id="hM"><h3>Home</h3></div>
+            <div id="bT"><h3>Book trip</h3></div>
+            <div id="aL"><h3>Admin login</h3></div>
+        </div>
+    </nav>
+
+<br>
+    <section>
+        <div><p>Marat Galimullin</p></div>
+    </section>
+
+<script>
+
+        $(document).ready(function(){ 
+            $("#menuBtn").click(function(){ 
+            $("#popDownmenu").slideToggle("slow");
+            }); 
+            });
+</script>      
+
+</body>
+</html>

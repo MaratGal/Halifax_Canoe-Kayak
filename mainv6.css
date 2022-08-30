@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+  }
+  
+  html,  body {
+    height: 100%;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+   }
+  
+  header {
+    background-color: #2a5196;
+    height: 60px;
+  }
+  
+  #hamPct {
+    width: 3%;
+    }
+
+  
+  #popDownmenu {
+    display: none;
+    width: 220px;
+    height: 84px;
+    background-color: #2a5196;
+  }
+
+  #hM, #bT, #aL {
+    color: white;
+    border: solid 0.5px white;
+    padding-left: 5px;
+    margin: 3px;
+  }
+
+  #logo {
+  float: right;
+  width: 5%;
+ }
+/* отвечает за responsive колонки в header */
+ .column {    
+  display: flex;
+}
+.column > div {
+  flex: 2;
+}
+.column > div:nth-of-type(1) {
+  flex: 1;
+}
+.column > div:nth-of-type(2) {
+  flex: 2;
+}
+.column > div:nth-of-type(3) {
+  flex: 1;
+}
+
+/* logo positioning */
+img[src="logo.png"] {
+    width: 50px;
+    float: right;
+    padding-left: 5px;
+}
+
+#menuBtn {
+    width: 40px;
+}
+#mainTitle {
+  color: white;
+  font: 25px helvetica;   
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+#textCont {
+  width: 90%;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: arial;
+  font-size: 3rem;
+}
+#bannerText {
+  position: absolute;
+  left: 27%;
+  top: 22%;
+}
+main {
+max-width: 1000px;
+}
+article {
+max-width: 100%;
+}
+
+#textCont {
+top: 5px;
+left: 40%;
+}
+
+nav {
+  position: absolute;
+  top: 55px;
+}
+
+@media screen and (max-width: 800px) {            
+ 
+  #textCont {
+    font-size: 2rem; 
+    width: 100%;
+    left: 0px;
+  }
+
+}
+
+@media screen and (max-width: 470px) {            
+ 
+  #textCont {
+    font-size: 1rem; 
+  }
+
+
+}
